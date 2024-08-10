@@ -4,6 +4,18 @@ justsayit allows users to use their voice to enter text into any field that has 
 
 - the extension works on any website
 
+## Install
+
+As it's not in the Firefox extensions store yet, you need to load it locally.
+
+Run this to open it in firefox:
+
+```shell
+./scripts/test_extension.sh
+```
+
+Then add your OpenAI API key to settings.
+
 ## Recording voice
 
 The justsayit webext icon toggles recording on and off.
@@ -16,6 +28,19 @@ justsayit only switches to recording mode if user focus is in a text input field
 When recording stops, the audio is converted to text via an OpenAI Whisper API call. This defaults to OpenAI's endpoint but users may update the endpoint in Options to point to another location.
 
 The text returned is then written into the text input field that has focus.
+
+## How to Access the Options Page
+
+To access the options page for the justsayit extension:
+
+1. Open Firefox and click on the menu icon (three horizontal lines) in the top-right corner.
+2. Select "Add-ons and Themes" from the menu.
+3. In the left sidebar, click on "Extensions".
+4. Find "justsayit" in the list of installed extensions.
+5. Click on the three-dot menu next to the justsayit extension.
+6. Select "Options" from the dropdown menu.
+
+Alternatively, you can access the options page directly by entering this URL in your Firefox address bar:
 
 # Implementation
 
@@ -52,21 +77,6 @@ We are considering implementing the following features in future updates:
 
 These features are subject to change based on user feedback and development priorities.
 
-
-# justsayit Firefox Extension
-
-## How to Access the Options Page
-
-To access the options page for the justsayit extension:
-
-1. Open Firefox and click on the menu icon (three horizontal lines) in the top-right corner.
-2. Select "Add-ons and Themes" from the menu.
-3. In the left sidebar, click on "Extensions".
-4. Find "justsayit" in the list of installed extensions.
-5. Click on the three-dot menu next to the justsayit extension.
-6. Select "Options" from the dropdown menu.
-
-Alternatively, you can access the options page directly by entering this URL in your Firefox address bar:
 
 ```
 about:addons
